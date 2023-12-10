@@ -11,7 +11,6 @@
         android:id="@+id/relativeLayout"
         android:layout_width="fill_parent"
         android:layout_height="75dp"
-        android:background="@color/gray6"
         android:gravity="center_vertical"
         android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +30,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_light"
                 android:text="@string/defaultGreeting"
-                android:textColor="@color/gray1"
                 android:textSize="12sp"
                 android:textStyle="italic"
             />
@@ -42,7 +40,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_extrabold"
                 android:text="@string/defaultUserName"
-                android:textColor="@color/gray1"
                 android:textSize="16sp"
                 android:textStyle="italic"
             />
@@ -50,16 +47,14 @@
 
         <Button
             android:id="@+id/profileBtn"
-            style="@style/Theme.PhotoApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center_vertical"
-            android:backgroundTintMode="add"
             android:fontFamily="@font/inter_light"
             android:onClick="goToProfile"
-            android:text="Ver Perfil"
-            tools:ignore="HardcodedText" />
+            android:text="@string/ver_perfil"
+            />
     </RelativeLayout>
 
     <LinearLayout
@@ -79,8 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_light"
-                android:text="Timeline"
-                android:textColor="@color/gray1"
+                android:text="@string/timelineHeadingSmall_text"
                 android:textSize="14sp"
                 android:textStyle="italic" />
 
@@ -89,8 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_extrabold"
-                android:text="ÚLTIMAS FOTOS"
-                android:textColor="@color/gray1"
+                android:text="@string/timelineHeadingBig_text"
                 android:textSize="20sp"
                 android:textStyle="italic" />
         </LinearLayout>
@@ -122,6 +115,14 @@
                     android:layout_marginTop="16dp"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/image_2" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/image_3" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
