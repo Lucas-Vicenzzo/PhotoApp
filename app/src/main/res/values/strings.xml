@@ -5,4 +5,5 @@
     <string name="timelineHeadingBig_text">ÚLTIMAS FOTOS</string>
     <string name="timelineHeadingSmall_text">Timeline</string>
     <string name="ver_perfil">Ver Perfil</string>
+    <string name="salvar">Salvar</string>
 </resources>

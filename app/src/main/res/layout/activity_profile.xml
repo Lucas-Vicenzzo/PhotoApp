@@ -8,12 +8,10 @@
     tools:context=".ProfileActivity">
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/header"
         android:layout_width="fill_parent"
         android:layout_height="75dp"
-        android:background="@color/material_dynamic_tertiary90"
         android:gravity="center_vertical"
-        android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -30,12 +28,17 @@
             android:onClick="backToHome"
             tools:ignore="HardcodedText" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray6"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <LinearLayout
         android:id="@+id/formHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/header"
         android:paddingTop="32dp"
         android:orientation="vertical"
         >
@@ -104,22 +107,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
-            <Button
-                android:id="@+id/saveChangesBtn"
-                style="@style/Theme.PhotoApp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:backgroundTintMode="add"
-                android:fontFamily="@font/inter_light"
-                android:text="Salvar"
-                tools:ignore="HardcodedText"
-                android:layout_marginTop="20dp"
-            />
+
 
         </LinearLayout>
     </LinearLayout>
 
-
+    <Button
+        android:id="@+id/saveChangesBtn"
+        style="@style/Theme.PhotoApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
