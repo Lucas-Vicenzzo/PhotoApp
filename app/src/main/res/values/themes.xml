@@ -3,7 +3,8 @@
     <style name="Base.Theme.PhotoApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+        <item name="colorAccent">@color/blue3</item>
 
+    </style>
     <style name="Theme.PhotoApp" parent="Base.Theme.PhotoApp" />
 </resources>
