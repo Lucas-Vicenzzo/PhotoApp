@@ -49,6 +49,13 @@ public class ProfileActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Dados Cadastrados com Sucesso", Toast.LENGTH_SHORT).show();
             }
         });
+
+
+        String nome = preferencias.getString("nome", "");
+        String email = preferencias.getString("email", "");
+        nameField.setText(nome);
+        emailField.setText(email);
+
     }
 
     public void backToHome(View view) {
