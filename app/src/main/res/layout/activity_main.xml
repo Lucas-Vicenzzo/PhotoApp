@@ -25,29 +25,31 @@
             android:orientation="vertical"
 
             >
-
             <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_extrabold"
-                android:text="Lucas Vicenzzo"
-                android:textColor="@color/gray1"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/greeting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_light"
-                android:text="Bem Vindo,"
+                android:text="@string/defaultGreeting"
                 android:textColor="@color/gray1"
                 android:textSize="12sp"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+            />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="@string/defaultUserName"
+                android:textColor="@color/gray1"
+                android:textSize="16sp"
+                android:textStyle="italic"
+            />
         </LinearLayout>
 
         <Button
+            android:id="@+id/profileBtn"
             style="@style/Theme.PhotoApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
             android:layout_gravity="center_vertical"
             android:backgroundTintMode="add"
             android:fontFamily="@font/inter_light"
+            android:onClick="goToProfile"
             android:text="Ver Perfil"
             tools:ignore="HardcodedText" />
     </RelativeLayout>
@@ -116,10 +119,9 @@
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/image_2"
-                    android:scaleType="centerCrop"
                     android:layout_marginTop="16dp"
-                    />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/image_2" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
